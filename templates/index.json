@@ -33,6 +33,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/MTDC_Why_Mac_Tools_Header_GIF_810x270_6bedb6e1-e722-4fb0-a1b5-c7a4662035a2.gif",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-center",

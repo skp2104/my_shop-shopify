@@ -82,12 +82,20 @@
         "button_label": "Button",
         "button_link": "https:\/\/google.com"
       }
+    },
+    "60917210-175b-4926-affb-c10fb3031ffb": {
+      "type": "featured-collection-test",
+      "settings": {
+        "featured_collection": "frontpage",
+        "title": "Featured Collection"
+      }
     }
   },
   "order": [
     "784a9dd4-eaa1-453c-a0ad-c8c4ac6f47ea",
     "image_banner",
     "featured_collection",
-    "d378420a-b93c-486a-9ac4-e8f7dbb069ed"
+    "d378420a-b93c-486a-9ac4-e8f7dbb069ed",
+    "60917210-175b-4926-affb-c10fb3031ffb"
   ]
 }

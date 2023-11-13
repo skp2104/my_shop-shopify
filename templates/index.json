@@ -73,11 +73,21 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "d378420a-b93c-486a-9ac4-e8f7dbb069ed": {
+      "type": "hero",
+      "settings": {
+        "title": "Example Heading",
+        "description": "<p>Example Description<\/p>",
+        "button_text": "Button",
+        "button_link": "https:\/\/google.com"
+      }
     }
   },
   "order": [
     "784a9dd4-eaa1-453c-a0ad-c8c4ac6f47ea",
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "d378420a-b93c-486a-9ac4-e8f7dbb069ed"
   ]
 }

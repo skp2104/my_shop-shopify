@@ -1,0 +1,31 @@
+<section class="container">
+  {% for product in collections[section.settings.featured_collection].products %}
+    {{ product.title }}
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Featured Collection Test",
+  "class": "featured-collection-test-setion",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "featured_collection",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Featured Collection",
+      "label": "Title"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Collection Test",
+      "category": "Collection"
+    }
+  ]
+}
+{% endschema %}

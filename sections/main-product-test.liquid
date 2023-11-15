@@ -18,9 +18,11 @@
       <h1>{{ product.title }}</h1>
       <p>{{ current_product.price | money }}</p>
 
-      {% form 'product', product, class: 'product-form', id: 'AddToCartForm' %}
-        <div class="mb-3">Hello world</div>
-      {% endform %}
+      {% comment %}
+        {% form 'product', product, class: 'product-form', id: 'AddToCartForm' %}
+          <div class="mb-3">Hello world</div>
+        {% endform %}
+      {% endcomment %}
     </div>
   </div>
 </div>

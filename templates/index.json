@@ -89,6 +89,11 @@
         "featured_collection": "frontpage",
         "title": "Featured Collection"
       }
+    },
+    "12f57443-2180-457e-9018-99bc7fd085b3": {
+      "type": "main-product-test",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -96,6 +101,7 @@
     "image_banner",
     "featured_collection",
     "d378420a-b93c-486a-9ac4-e8f7dbb069ed",
-    "60917210-175b-4926-affb-c10fb3031ffb"
+    "60917210-175b-4926-affb-c10fb3031ffb",
+    "12f57443-2180-457e-9018-99bc7fd085b3"
   ]
 }

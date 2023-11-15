@@ -6,23 +6,35 @@
     <div class="col-md-6 col-12">
       <img
         class="img-fluid"
-        src="{{ product_image |  image_url }}"
+        src="{{ product_image |  image_url: width: 400, height: 400 }}"
         alt="{{ product_image.alt }}"
         id="ProductMainImage"
       >
       {% for image in product.images %}
-        <img src="{{ image.src |  image_url }}" alt="{{ image.alt }}">
+        <img src="{{ image.src |  image_url: width: 400, height: 400 }}" alt="{{ image.alt }}">
       {% endfor %}
     </div>
     <div class="col-md-6 col-12">
       <h1>{{ product.title }}</h1>
       <p>{{ current_product.price | money }}</p>
 
-      {% comment %}
-        {% form 'product', product, class: 'product-form', id: 'AddToCartForm' %}
-          <div class="mb-3">Hello world</div>
-        {% endform %}
-      {% endcomment %}
+      {% form 'product', product, class: 'product-form', id: 'AddToCartForm' %}
+        <div class="mb-3">
+          <select name="id" id="productSelect" class="form-select">
+            {% for variant in product.variants %}
+              {% if variant.available %}
+                <option value="{{ variant.id }}">
+                  {{ variant.title }}
+                </option>
+              {% else %}
+                <option value="{{ variant.id }}" disabled="disabled">
+                  {{ variant.title }}
+                </option>
+              {% endif %}
+            {% endfor %}
+          </select>
+        </div>
+      {% endform %}
     </div>
   </div>
 </div>

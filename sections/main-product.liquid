@@ -21,10 +21,11 @@
         {% form 'product', product, class: 'product-form', id: 'AddToCartForm' %}
           <div class="mb-3">Hello world</div>
         {% endform %}
+            {{ product.metafields.custom.custom_size }}
+    {{ product.metafields.custom.custom_size.value }}
 
     </div>
-    {{ product.metafields.custom.custom_size }}
-    {{ product.metafields.custom.custom_size.value }}
+
   </div>
 </div>
 

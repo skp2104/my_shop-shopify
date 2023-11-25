@@ -1,21 +1,21 @@
 {% schema %}
 {
-  "name": "FAQ",
+  "name": "t:sections.faq.name",
   "blocks": [
     {
-      "name": "FAQ Items",
+      "name": "t:sections.faq.blocks.name",
       "type": "faq",
       "settings": [
         {
           "type": "text",
           "id": "title",
-          "label": "Title",
-          "default": "FAQ Title Example"
+          "label": "t:sections.faq.blocks.question",
+          "default": "t:sections.faq.blocks.default"
         },
         {
           "type": "richtext",
           "id": "answer",
-          "label": "Answer"
+          "label": "t:sections.faq.blocks.answer"
         }
       ]
     }

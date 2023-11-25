@@ -1,10 +1,10 @@
 <div class="container">
   {% paginate collection.products by 4 %}
-    <div class="row">
-      <h1>{{ collection.title }}</h1>
+    <div class="row my-5">
+      <h1 class="text-center">{{ collection.title }}</h1>
     </div>
 
-    <div class="row">
+    <div class="row justify-content-center">
       {% for product in collection.products %}
         {% assign image = product.featured_media.preview_image %}
         <div class="col-3 g-2">
@@ -31,5 +31,9 @@
         <p>no matches</p>
       {% endfor %}
     </div>
+
+    {% if paginate.pages > 1 %}
+      {{ paginate | default_pagination }}
+    {% endif %}
   {% endpaginate %}
 </div>

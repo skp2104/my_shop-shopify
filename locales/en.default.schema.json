@@ -680,9 +680,9 @@
       }
     },
     "faq": {
-      "name": "FAQs",
+      "name": "FAQ",
       "blocks": {
-        "name": "FAQ Item",
+        "name": "FAQ Itemssss",
         "question": "Title",
         "answer": "Answer",
         "default": "FAQ Title Example"

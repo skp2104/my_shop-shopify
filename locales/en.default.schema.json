@@ -680,12 +680,12 @@
       }
     },
     "faq": {
-      "name": "FAQ",
+      "name": "FAQQQ",
       "blocks": {
         "name": "FAQ Itemssss",
         "question": "Titleeeee",
         "answer": "Answerrrrrr",
-        "default": "FAQ Title Example"
+        "skp": "FAQ Title Example"
       }
     },
     "featured-blog": {
